@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arthur de Santana Magri</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+
+<body>
+        <nav>
+            <ul>
+                <li><a href="#sobre">Sobre mim</a></li>
+                <li><a href="#formacao">Formação Educacional</a></li>
+                <li><a href="#portfolio">Portfólio</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+        
+        
+        <!-- Conteúdo inicial -->
+        <div class="container">
+        <section id="sobre">
+            <h1>Sobre mim</h1>
+            <p>Meu nome é Guilherme Gomes Fernandes, comecei meus estudos no
+           Centro Universitário Internacional, Uninter em 2024. Alguns dos meus hobbies
+           incluem escrever os mais diversos tipos de temas, incluindo aqueles fictícios
+           como fantasia.
+            Amo fazer caminhadas longas para se exercitar e aproveitar um
+           bom momento ao ar livre. Tenho muito interesse em aprender mais sobre tecnologia
+           e afins, com o objetivo de obter a melhor carreira possível com minhas habilidades.</p>
+            </section>
+        </div>
+            
+            
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const links = document.querySelectorAll("nav ul li a");
+        const container = document.querySelector(".container");
+        
+        
+        // Conteúdo para cada seção
+        const sections = {
+            "sobre": `
+                <section id="sobre">
+                    <h1>Sobre mim</h1>
+                    <p>Meu nome é Guilherme Gomes Fernandes, comecei meus
+               estudos no Centro Universitário Internacional, Uninter em 2024. Alguns dos meus
+               hobbies incluem escrever os mais diversos tipos de temas, incluindo aqueles
+               fictícios como fantasia.
+                Amo fazer caminhadas longas para se exercitar e aproveitar um
+               bom momento ao ar livre. Tenho muito interesse em aprender mais sobre tecnologia
+               e afins, com o objetivo de obter a melhor carreira possível com minhas habilidades.</p>
+                </section>
+            `,
+            "formacao": `
+                <section id="formacao">
+                    <h1>Formação Educacional</h1>
+                    <p>Completei o ensino médio no colégio Desafio Finpec
+               em Cotia no ano de 2023. Estou atualmente cursando Análise e Desenvolvimento de
+               sistemas no Centro Universitário Internacional, Uninter em 2024. Sou fluente em
+               português do Brasil e meu nível em inglês é intermediário, sendo capaz de manter
+               uma conversa ou pedir por ajuda na língua dita.</p>
+                </section>
+            `,
+            "portfolio": `
+                <section id="portfolio">
+                    <h1>Portfólio</h1>
+                    <p>Links associados:</p>
+                    <ul class="portfolio-links">
+                        <li><a href="#">https://guilhermegsfs.github.io/AulaSite1/</a></li>
+                        <li><a href="#">https://guilhermegsfs.github.io/AulaSite2/</a></li>
+                        <li><a href="#">https://guilhermegsfs.github.io/AulaSite5/</a></li>
+                    </ul>
+                </section>
+            `,
+            "contato": `
+                <section id="contato">
+                    <h1>Contato</h1>
+                    <form>
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" name="nome" required>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                        <label for="mensagem">Mensagem:</label>
+                        <textarea id="mensagem" name="mensagem" rows="4"
+                        required></textarea>
+                        <input type="submit" value="Enviar">
+                    </form>
+                </section>
+            `
+        };
+ 
+ 
+        // Adiciona o evento de clique para cada link
+        links.forEach(link => {
+            link.addEventListener("click", function(event) {
+                event.preventDefault();
+                const section = this.getAttribute("href").substring(1);
+                container.innerHTML = sections[section];
+            });
+        });
+    });
+</script>
+
+</body>
+</html>
+
