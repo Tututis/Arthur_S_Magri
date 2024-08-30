@@ -1,0 +1,137 @@
+/* Estilo básico de reset para garantir consistência entre navegadores */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   }
+   /* Estilo do corpo da página */
+   body {
+    font-family: Arial, sans-serif;
+    background-color: #f3e5f5; /* Fundo */
+    color: #3c1053; /* Texto principal*/
+    display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: flex-start;
+ height: 100vh;
+}
+/* Estilo do contêiner principal */
+.container {
+ width: 80%;
+ max-width: 800px;
+ background-color: #ffffff; /* Fundo branco para o conteúdo */
+ padding: 20px;
+ margin-top: 40px; /* Espaço aumentado entre o menu e o conteúdo */
+ border-radius: 8px;
+ box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+/* Estilo do menu de navegação */
+nav {
+ width: 100%;
+ background-color: #ffffff; /* Fundo branco para o menu */
+ padding: 10px 0;
+ display: flex;
+ justify-content: center;
+ border-radius: 8px 8px 0 0;
+}
+nav ul {
+ list-style-type: none;
+ display: flex;
+ justify-content: center;
+ gap: 10px; /* Espaçamento entre os links */
+ padding: 0;
+ margin: 0;
+}
+nav ul li {
+ margin: 0;
+}
+/* Estilo das bordas ao redor dos links de navegação */
+nav ul li a {
+ text-decoration: none;
+ color: #3c1053; /* Texto dos links*/
+ font-weight: bold;
+ padding: 10px 20px;
+ border-radius: 4px;
+ border: 2px solid #3c1053; /* Borda dos links*/
+ margin: 5px; /* Espaçamento entre os links */
+ transition: background-color 0.3s, color 0.3s;
+}
+nav ul li a:hover {
+ background-color: #f3e5f5; /* Fundo dos links ao passar o mouse */
+ color: #4a0072; /* Cor do texto ao passar o mouse */
+}
+/* Estilo para o texto abaixo do menu */
+.text-below-nav {
+ margin-top: 20px;
+ text-align: center;
+ font-weight: bold;
+ color: #3c1053; /* Texto */
+}
+/* Estilo dos links */
+a {
+ color: #7b1fa2; /* Links dentro do conteúdo */
+ transition: color 0.3s;
+}
+a:hover {
+ color: #4a0072; /* Cor dos links ao passar o mouse */
+}
+/* Estilo dos cabeçalhos */
+h1, h2, h3 {
+ color: #3c1053; /* Títulos */
+ margin-bottom: 10px;
+}
+/* Estilo dos parágrafos */
+p {
+ margin-bottom: 15px;
+ line-height: 1.6;
+}
+/* Estilo dos formulários */
+form {
+ display: flex;
+ flex-direction: column;
+}
+form label {
+    margin-bottom: 5px;
+    color: #3c1053; /* Labels dos formulários */
+   }
+   form input, form textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid #7b1fa2; /* Bordas dos inputs */
+    border-radius: 4px;
+    font-size: 1em;
+    background-color: #f3e5f5; /* Fundo dos inputs */
+    color: #3c1053; /* Texto dos inputs */
+   }
+   form input[type="submit"] {
+    background-color: #7b1fa2; /* Botão de enviar */
+    color: #ffffff; /* Texto do botão em branco */
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+   }
+   form input[type="submit"]:hover {
+    background-color: #4a0072; /* Fundo do botão ao passar o mouse */
+   }
+   /* Estilo específico para a seção de portfólio */
+   .portfolio-links {
+    margin-top: 20px;
+    list-style-type: none;
+    padding: 0;
+   }
+   .portfolio-links li {
+    margin-bottom: 10px;
+   }
+   .portfolio-links li a {
+    display: block;
+    padding: 10px;
+    background-color: #e1bee7; /* Fundo dos links de portfólio */
+    color: #3c1053; /* Texto dos links de portfólio */
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+   }
+   .portfolio-links li a:hover {
+    background-color: #d1c4e9; /* Fundo ao passar o mouse */
+    color: #4a0072; /* Texto ao passar o mouse */
+   }
